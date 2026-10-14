@@ -1,0 +1,121 @@
+# Snakes and Ladders Multiplayer Game
+
+## Project Description
+
+This project is a multiplayer Snakes and Ladders game developed using Java socket programming. The system follows a client-server architecture where the server runs on AWS EC2 and two clients connect to the server using the AWS public IP address.
+
+The game includes:
+
+* Multiplayer gameplay
+* Turn-based system
+* Snake and ladder mechanics
+* Replay functionality
+* Start screen and end screen
+* Username system
+* Graphical user interface using Java Swing
+* Real-time synchronization between players
+
+---
+
+# Technologies Used
+
+* Java
+* Java Swing
+* TCP Socket Programming
+* AWS EC2 Ubuntu Server
+* Git & GitHub
+* NetBeans IDE
+
+---
+
+# Project Structure
+
+```text
+src/
+│
+├── client/
+│   └── GameClient.java
+│
+├── server/
+│   └── GameServer.java
+│
+├── common/
+│   ├── Message.java
+│   └── GameState.java
+│
+└── ui/
+    ├── GameBoard.java
+    └── StartScreen.java
+```
+
+---
+
+# How to Run the Project
+
+## 1. Start AWS Server
+
+Connect to AWS EC2 Ubuntu instance and run:
+
+```bash
+cd SnakesAndLaddersNetwork
+javac src/*/*.java
+java -cp src server.GameServer
+```
+
+The server will start on port 5000.
+
+---
+
+## 2. Run Client Application
+
+Open the project in NetBeans or any Java IDE and run:
+
+```text
+client.GameClient
+```
+
+Run two clients for multiplayer gameplay.
+
+---
+
+# AWS Configuration
+
+* AWS Service: EC2
+* Operating System: Ubuntu Server 24.04 LTS
+* Server Type: t2.micro
+* Communication Protocol: TCP
+* Open Port: 5000
+
+Clients connect using the AWS public IPv4 address.
+
+---
+
+# Game Rules
+
+1. The game is played between two players.
+2. Players roll dice in turns.
+3. Ladders move the player upward.
+4. Snakes move the player downward.
+5. The first player reaching square 100 wins.
+6. The game can be restarted without closing the application.
+
+---
+
+# Features
+
+* Multiplayer network communication
+* AWS cloud server support
+* Modern graphical interface
+* Real-time game updates
+* Replay system
+* Username support
+* Turn restriction system
+* Server-side game management
+
+---
+
+
+# Developer
+
+Muhammet Usama YILDIRIM
+
